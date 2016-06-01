@@ -401,6 +401,7 @@ end
 function _M.commit_pipeline(self)
     local reqs = self._reqs
     if not reqs then
+        self._reqs = nil
         return nil, "no pipeline"
     end
 
